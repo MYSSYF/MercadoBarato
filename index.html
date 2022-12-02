@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="comparisonForm">
+        <section class="comparisonForm__container">
+            <h2 class="comparisonForm__text">Encontrar vecinos</h2>
+            <div class="comparisonForm__section">
+                <div class="comparisonForm__inpufield">
+                    <label class="input__text" for="person">Persona</label>
+                    <select class="comparisonForm__input" name="person" id="">
+
+                    </select>
+                </div>
+
+                <div class="comparisonForm__inpufield">
+                    <label class="input__text" for="neighbors">Vecinos (K)</label>
+                    <input class="comparisonForm__input" type="number" name="neighbors" required min="1" max="57">
+                </div>
+
+                <div class="comparisonForm__inpufield">
+                    <label class="input__text" for="filter">Filtro</label>
+                    <select class="comparisonForm__input" name="filter" id="">
+                        <option value="none"> Ninguno </option>
+                        <option value="0">Cárnicos</option>
+                        <option value="1">Frutas / Verduras</option>
+                        <option value="2">Lacteos</option>
+                        <option value="3">Aseo</option>
+                        <option value="4">Cereales</option>
+
+                    </select>
+                </div>
+
+                <button class="comparisonForm__btn">
+                    Ejecutar
+                </button>
+            </div>
+            <div class="">
+                <h2 class="comparisonForm__text">Vecinos más cercanos</h2>
+                <ol class="comparisonForm__results">
+
+                </ol>
+            </div>
+        </section>
+        <section class="comparisonForm__graphicSection">
+            <h2 class="comparisonForm__text">Gráfico para los vecinos</h2>
+            <section class="comparisonForm__graphic">
+
+            </section>
+        </section>
+
+    </form>
+    <script src="./lib/papaparse.min.js"></script>
+    <script src="./data/filters.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
